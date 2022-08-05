@@ -6,13 +6,12 @@
 1. [Introduction](#introduction)
     1. [Description](#description)
     
-2. [Software and Libraries](libraries)
+2. [Software and Libraries](#libraries)
 
 3. [Project Walkthrough](#walk)
     1. [Gathering and Assessing](#sec2p1)
-    2. [Descriptive statistics](#sec2p2)
-    3. [Cleaning and Storing](#sec2p3)
-    4. [Visualization to summarize findings](#sec2p4)
+    2. [Cleaning and Storing](#sec2p3)
+    3. [Visualization to summarize findings](#sec2p4)
         
 4. [Conclusion and Limitations](#conclusion)
 
@@ -20,7 +19,7 @@
 
 ## 1. Introduction <a name="introduction"></a>
 - This project gathers, cleans and analyzes data from The Movie Database. The [dataset](https://d17h27t6h515a5.cloudfront.net/topher/2017/October/59dd1c4c_tmdb-movies/tmdb-movies.csv.) collected from the database contains records of movies with features of the movie that makes up the columns in the dataset.
-## Description <a name="description"></a>
+### 1.1. Description <a name="description"></a>
 The dataset to investigate contains information about **10,866** movies collected from The Movie Database(TMDb). The dataset has **21** columns which are the features of the 10,866 movies. Each column is described below:
 1. **id**: A unique number allocated to the movies the dataset
 2. **imdb_id**: The unique number of the movies in the Internet Movie Database(IMDb)
@@ -44,3 +43,21 @@ The dataset to investigate contains information about **10,866** movies collecte
 20. **budget_adj**: Budget of the movie in terms of 2010 dollars, accounting for inflation over time
 21. **revenue_adj**: Revenue of the movie in terms of 2010 dollars, accounting for inflation over time
     
+## 2. Software and Libraries <a name="libraries"></a>
+- Python
+- Prefarred IDLE: VS Code, Jupyter Notebook etc.
+- Numpy
+- Pandas
+- Matplotlib
+
+## 4. Conclusion and Limitations <a name="conclusion"></a>
+Movie industries are businesses with the goal of producing movies that are very successful, meaning, producing movies that generates very high revenue so that they can make significant profit on the movie. Throughout the analysis, many features have been analysed to see which ones determine the success of a movie. The methods future movie producers can follow to ensure the success of their movies are:
+> - Making a large investment on the film production, that is, having a high budget for a movie.
+> - Proper marketing of the movie to increase movie popularity thereby increasing revenue by the number of sales. 
+> - vote_count of a movie increases the revenue of the movie significantly.
+### Limitations
+1. There is a significant sum of missing values in the production_companies column and due to the inability to fill the string column with the mean of the column, These missing values distorted the analysis.
+
+2. Analysis done without dropping the rows with null values were completely differnt from the ones done with no null values present in terms of anlayzing the trends in revenue over time and the trends in movie popularity over time.
+
+3. There's no clear relationship between vote_count and vote_average. There is also no clear meaning behind the **vote_avarage** and also popularity, how was popularity calculated?, is popularity of a movie similar to vote_average?.
