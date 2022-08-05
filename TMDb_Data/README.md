@@ -9,9 +9,8 @@
 2. [Software and Libraries](#libraries)
 
 3. [Project Walkthrough](#walk)
-    1. [Gathering and Assessing](#sec2p1)
-    2. [Cleaning and Storing](#sec2p3)
-    3. [Visualization to summarize findings](#sec2p4)
+    1. [Gathering and Assessing](#sub1)
+    2. [Cleaning, Storing and Visualization](#sub2)
         
 4. [Conclusion and Limitations](#conclusion)
 
@@ -50,14 +49,36 @@ The dataset to investigate contains information about **10,866** movies collecte
 - Pandas
 - Matplotlib
 
+## 3. Project Walkthrough <a name="walk"></a>
+### 3.1. Gathering and Assessing <a name="sub1"></a>
+The [data](https://d17h27t6h515a5.cloudfront.net/topher/2017/October/59dd1c4c_tmdb-movies/tmdb-movies.csv.) is scrapped from The Movie Database and readily available for analysis. The data is loaded into a dataframe and assessed for quality and tidines issues which are documented cleaned after detection. Most frequent issues are wrong datatypes and missing values.
+
+### 3.2. Cleaning, Storing and Visualization <a name="sub2"></a>
+After cleaning the dataset, store the cleaned dataset for later use, mainly for visualizaation or model building. Summaries of findings are communicated through exploratory and explanatory visualizations.
+
 ## 4. Conclusion and Limitations <a name="conclusion"></a>
 Movie industries are businesses with the goal of producing movies that are very successful, meaning, producing movies that generates very high revenue so that they can make significant profit on the movie. Throughout the analysis, many features have been analysed to see which ones determine the success of a movie. The methods future movie producers can follow to ensure the success of their movies are:
-> - Making a large investment on the film production, that is, having a high budget for a movie.
-> - Proper marketing of the movie to increase movie popularity thereby increasing revenue by the number of sales. 
-> - vote_count of a movie increases the revenue of the movie significantly.
+- Making a large investment on the film production, that is, having a high budget for a movie.
+- Proper marketing of the movie to increase movie popularity thereby increasing revenue by the number of sales. 
+- vote_count of a movie increases the revenue of the movie significantly.
+
 ### Limitations
 1. There is a significant sum of missing values in the production_companies column and due to the inability to fill the string column with the mean of the column, These missing values distorted the analysis.
 
 2. Analysis done without dropping the rows with null values were completely differnt from the ones done with no null values present in terms of anlayzing the trends in revenue over time and the trends in movie popularity over time.
 
 3. There's no clear relationship between vote_count and vote_average. There is also no clear meaning behind the **vote_avarage** and also popularity, how was popularity calculated?, is popularity of a movie similar to vote_average?.
+
+
+## 5. References <a name="references"></a>
+- [1]  Anaconda Distribution
+https://www.anaconda.com/
+
+- [2] matplotlib: Python plotting library
+https://matplotlib.org/
+
+- [3] Pandas: Chart Viualization
+https://pandas.pydata.org/docs/user_guide/visualization.html
+
+- [4] How to Choose a Chart Type
+https://towardsdatascience.com/data-visualization-101-how-to-choose-a-chart-type-9b8830e558d6
