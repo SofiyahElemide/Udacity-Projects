@@ -1,4 +1,4 @@
-# TMDb Dataset
+# Ford GoBike Data
 ## Elemide Sofiyah
 
 
@@ -19,7 +19,7 @@
 6. [References](#references)
 
 ## 1. Introduction <a name="introduction"></a>
-- This project gathers, cleans and analyzes data from Ford GoBike System. The [dataset]([https://d17h27t6h515a5.cloudfront.net/topher/2017/October/59dd1c4c_tmdb-movies/tmdb-movies.csv.](https://www.google.com/url?q=https://video.udacity-data.com/topher/2020/October/5f91cf38_201902-fordgobike-tripdata/201902-fordgobike-tripdata.csv&sa=D&source=editors&ust=1659713813739392&usg=AOvVaw3FJndwEO6Sb_bQq5a7W6mb)) collected from the database contains records of bike ride trips with features of each trip that makes up the columns in the dataset.
+- This project gathers, cleans and analyzes data from Ford GoBike System. The [dataset]([https://d17h27t6h515a5.cloudfront.net/topher/2017/October/59dd1c4c_tmdb-movies/tmdb-movies.csv.](https://www.google.com/url?q=https://video.udacity-data.com/topher/2020/October/5f91cf38_201902-fordgobike-tripdata/201902-fordgobike-tripdata.csv&sa=D&source=editors&ust=1659713813739392&usg=AOvVaw3FJndwEO6Sb_bQq5a7W6mb) collected from the database contains records of bike ride trips with features of each trip that makes up the columns in the dataset.
 ### 1.1. Description <a name="description"></a>
 - This data set includes information about individual rides made in a bike-sharing system covering the greater San Francisco Bay area. The data set contains information about **183412** ride details that occured in 2019, collected from Ford GoBike System. The dataset contains **16 columns** with gives the details about each ride. Each column is described below:
 1. duration_sec: Trip duration in seconds
@@ -49,7 +49,7 @@
 
 ## 3. Project Walkthrough <a name="walk"></a>
 ### 3.1. Gathering and Assessing <a name="sub1"></a>
-The [data set]([https://d17h27t6h515a5.cloudfront.net/topher/2017/October/59dd1c4c_tmdb-movies/tmdb-movies.csv.](https://www.google.com/url?q=https://video.udacity-data.com/topher/2020/October/5f91cf38_201902-fordgobike-tripdata/201902-fordgobike-tripdata.csv&sa=D&source=editors&ust=1659713813739392&usg=AOvVaw3FJndwEO6Sb_bQq5a7W6mb)) is provided by Udacity and readily available for analysis. 
+The [data set]([https://d17h27t6h515a5.cloudfront.net/topher/2017/October/59dd1c4c_tmdb-movies/tmdb-movies.csv.](https://www.google.com/url?q=https://video.udacity-data.com/topher/2020/October/5f91cf38_201902-fordgobike-tripdata/201902-fordgobike-tripdata.csv&sa=D&source=editors&ust=1659713813739392&usg=AOvVaw3FJndwEO6Sb_bQq5a7W6mb) is provided by Udacity and readily available for analysis. 
 The data is loaded into a dataframe and assessed for quality and tidines issues which are documented cleaned after detection. Most frequent issues are wrong datatypes and missing values.
 
 ### 3.2. Cleaning, Storing and Visualization <a name="sub2"></a>
